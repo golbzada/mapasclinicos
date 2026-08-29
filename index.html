@@ -31,7 +31,9 @@
     <meta name="twitter:image" content="assets/img/hero-mockup.png" />
 
     <link rel="icon" href="favicon.ico" sizes="any" />
-    <link rel="icon" href="favicon.png" type="image/png" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="favicon.png" type="image/png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
     <link rel="preload" as="image" href="assets/img/hero-mockup.png" fetchpriority="high" />
 
     <!-- Google Fonts -->
@@ -609,6 +611,52 @@
         .btn-mint {
           width: 100%;
           padding: 15px 20px;
+          font-size: 15px;
+        }
+      }
+
+      /* --------------------------------------------------------------------------
+         7b. LINHA DE PREÇO DOS BÔNUS
+         -------------------------------------------------------------------------- */
+      .bonus-price-row {
+        margin-top: 18px;
+        padding-top: 14px;
+        border-top: 1px dashed rgba(11, 43, 38, 0.12);
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+
+      .bonus-price-label {
+        font-size: 13.5px;
+        color: #7a8a85;
+      }
+
+      .bonus-price-value {
+        text-decoration: line-through;
+        text-decoration-color: #dc2626;
+        text-decoration-thickness: 2px;
+        color: #dc2626;
+        font-weight: 700;
+        white-space: nowrap;
+      }
+
+      .bonus-price-tag {
+        font-size: 13.5px;
+        font-weight: 700;
+        color: #235347;
+        white-space: nowrap;
+      }
+
+      @media (max-width: 640px) {
+        .bonus-price-row {
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 8px;
+        }
+        .bonus-price-value {
+          display: block;
+          margin-top: 4px;
           font-size: 15px;
         }
       }
@@ -3419,33 +3467,14 @@
                   doutrinários e organizativos, financiamento e redes de atenção
                   do SUS.
                 </p>
-                <div
-                  style="
-                    margin-top: 18px;
-                    padding-top: 14px;
-                    border-top: 1px dashed rgba(11, 43, 38, 0.12);
-                    display: flex;
-                    align-items: center;
-                    gap: 12px;
-                  "
-                >
-                  <span style="font-size: 13.5px; color: #7a8a85"
+                <div class="bonus-price-row">
+                  <span class="bonus-price-label"
                     >Valor individual:
-                    <span
-                      style="
-                        text-decoration: line-through;
-                        text-decoration-color: #dc2626;
-                        text-decoration-thickness: 2px;
-                        color: #dc2626;
-                        font-weight: 700;
-                      "
+                    <span class="bonus-price-value"
                       >R$ 17,00</span
                     ></span
                   >
-                  <span
-                    style="font-size: 13.5px; font-weight: 700; color: #235347"
-                    >➔ Incluso no pacote</span
-                  >
+                  <span class="bonus-price-tag">➔ Incluso no pacote</span>
                 </div>
               </div>
             </div>
@@ -3473,33 +3502,14 @@
                   Protocolos diretos de sala vermelha: dose de medicações de
                   emergência, intubação rápida e suporte avançado de vida.
                 </p>
-                <div
-                  style="
-                    margin-top: 18px;
-                    padding-top: 14px;
-                    border-top: 1px dashed rgba(11, 43, 38, 0.12);
-                    display: flex;
-                    align-items: center;
-                    gap: 12px;
-                  "
-                >
-                  <span style="font-size: 13.5px; color: #7a8a85"
+                <div class="bonus-price-row">
+                  <span class="bonus-price-label"
                     >Valor individual:
-                    <span
-                      style="
-                        text-decoration: line-through;
-                        text-decoration-color: #dc2626;
-                        text-decoration-thickness: 2px;
-                        color: #dc2626;
-                        font-weight: 700;
-                      "
+                    <span class="bonus-price-value"
                       >R$ 19,00</span
                     ></span
                   >
-                  <span
-                    style="font-size: 13.5px; font-weight: 700; color: #235347"
-                    >➔ Incluso no pacote</span
-                  >
+                  <span class="bonus-price-tag">➔ Incluso no pacote</span>
                 </div>
               </div>
             </div>
@@ -3527,33 +3537,14 @@
                   Referência rápida para gasometria, eletrólitos, marcadores
                   cardíacos, líquor e fórmulas clínicas essenciais da prova.
                 </p>
-                <div
-                  style="
-                    margin-top: 18px;
-                    padding-top: 14px;
-                    border-top: 1px dashed rgba(11, 43, 38, 0.12);
-                    display: flex;
-                    align-items: center;
-                    gap: 12px;
-                  "
-                >
-                  <span style="font-size: 13.5px; color: #7a8a85"
+                <div class="bonus-price-row">
+                  <span class="bonus-price-label"
                     >Valor individual:
-                    <span
-                      style="
-                        text-decoration: line-through;
-                        text-decoration-color: #dc2626;
-                        text-decoration-thickness: 2px;
-                        color: #dc2626;
-                        font-weight: 700;
-                      "
+                    <span class="bonus-price-value"
                       >R$ 15,00</span
                     ></span
                   >
-                  <span
-                    style="font-size: 13.5px; font-weight: 700; color: #235347"
-                    >➔ Incluso no pacote</span
-                  >
+                  <span class="bonus-price-tag">➔ Incluso no pacote</span>
                 </div>
               </div>
             </div>
@@ -3581,33 +3572,14 @@
                   Planejamento diário estruturado para cobrir os 120 mapas de
                   forma equilibrada no mês anterior ao ENAMED 2026.
                 </p>
-                <div
-                  style="
-                    margin-top: 18px;
-                    padding-top: 14px;
-                    border-top: 1px dashed rgba(11, 43, 38, 0.12);
-                    display: flex;
-                    align-items: center;
-                    gap: 12px;
-                  "
-                >
-                  <span style="font-size: 13.5px; color: #7a8a85"
+                <div class="bonus-price-row">
+                  <span class="bonus-price-label"
                     >Valor individual:
-                    <span
-                      style="
-                        text-decoration: line-through;
-                        text-decoration-color: #dc2626;
-                        text-decoration-thickness: 2px;
-                        color: #dc2626;
-                        font-weight: 700;
-                      "
+                    <span class="bonus-price-value"
                       >R$ 17,00</span
                     ></span
                   >
-                  <span
-                    style="font-size: 13.5px; font-weight: 700; color: #235347"
-                    >➔ Incluso no pacote</span
-                  >
+                  <span class="bonus-price-tag">➔ Incluso no pacote</span>
                 </div>
               </div>
             </div>
@@ -3633,33 +3605,14 @@
                   Teoria essencial, valores de corte, tratamentos de primeira
                   linha, contraindicações, sinais de gravidade e pegadinhas.
                 </p>
-                <div
-                  style="
-                    margin-top: 18px;
-                    padding-top: 14px;
-                    border-top: 1px dashed rgba(11, 43, 38, 0.12);
-                    display: flex;
-                    align-items: center;
-                    gap: 12px;
-                  "
-                >
-                  <span style="font-size: 13.5px; color: #7a8a85"
+                <div class="bonus-price-row">
+                  <span class="bonus-price-label"
                     >Valor individual:
-                    <span
-                      style="
-                        text-decoration: line-through;
-                        text-decoration-color: #dc2626;
-                        text-decoration-thickness: 2px;
-                        color: #dc2626;
-                        font-weight: 700;
-                      "
+                    <span class="bonus-price-value"
                       >R$ 19,00</span
                     ></span
                   >
-                  <span
-                    style="font-size: 13.5px; font-weight: 700; color: #235347"
-                    >➔ Incluso no pacote</span
-                  >
+                  <span class="bonus-price-tag">➔ Incluso no pacote</span>
                 </div>
               </div>
             </div>
@@ -3685,33 +3638,14 @@
                   Perguntas objetivas com respostas comentadas por especialidade
                   para memorização ativa e revisão rápida.
                 </p>
-                <div
-                  style="
-                    margin-top: 18px;
-                    padding-top: 14px;
-                    border-top: 1px dashed rgba(11, 43, 38, 0.12);
-                    display: flex;
-                    align-items: center;
-                    gap: 12px;
-                  "
-                >
-                  <span style="font-size: 13.5px; color: #7a8a85"
+                <div class="bonus-price-row">
+                  <span class="bonus-price-label"
                     >Valor individual:
-                    <span
-                      style="
-                        text-decoration: line-through;
-                        text-decoration-color: #dc2626;
-                        text-decoration-thickness: 2px;
-                        color: #dc2626;
-                        font-weight: 700;
-                      "
+                    <span class="bonus-price-value"
                       >R$ 21,00</span
                     ></span
                   >
-                  <span
-                    style="font-size: 13.5px; font-weight: 700; color: #235347"
-                    >➔ Incluso no pacote</span
-                  >
+                  <span class="bonus-price-tag">➔ Incluso no pacote</span>
                 </div>
               </div>
             </div>
