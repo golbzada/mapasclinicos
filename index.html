@@ -173,6 +173,13 @@
         text-wrap: pretty;
       }
 
+      /* no mobile o bloco da garantia empilha: centraliza junto com o selo */
+      @media (max-width: 640px) {
+        .garantia-grid {
+          text-align: center;
+        }
+      }
+
       a {
         color: inherit;
         text-decoration: none;
@@ -951,7 +958,7 @@
             data-reveal
             data-d="2"
           >
-            Sistema visual de revisão para o ENAMED, organizados por grandes
+            Sistema visual de revisão para o ENAMED, organizado por grandes
             áreas, feito para revisar rapidamente os pontos essenciais sem
             reconstruir material do zero.
           </p>
@@ -3124,7 +3131,7 @@
                 color: #093235;
               "
             >
-              120 Mapas Clínicos Visuais Enamed 2026
+              120 Mapas Clínicos Visuais ENAMED 2026
             </h2>
             <p style="margin-top: 14px; font-size: 16px; color: #4e5e5f">
               6 grandes áreas clínicas organizadas em 20 mapas esquemáticos
@@ -4382,6 +4389,7 @@
           "
         >
           <div
+            class="garantia-grid"
             data-reveal
             style="
               display: grid;
@@ -4460,7 +4468,7 @@
                 color: #093235;
               "
             >
-              Perguntas Frequentes
+              Perguntas frequentes
             </h2>
             <p style="margin-top: 14px; font-size: 16px; color: #4e5e5f">
               Tudo o que você precisa saber antes de garantir seu acesso.
